@@ -9,7 +9,6 @@ fn main() {
         println!("Проблема с аргументами: {}", err);
         process::exit(1);
     });
-    println!("Поиск {}\nВ файле {}", config.query, config.filename);
 
     if let Err(e) = minigrep::run(config) {
         println!("Ошибка: {}", e);
